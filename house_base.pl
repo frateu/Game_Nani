@@ -38,3 +38,4 @@ list_connections(X, [Y]):- connected(X, Y).
 
 look(X, [Y]):- list_things(X, [Y]).
 look(X, [Y]):- list_connections(X, [Y]).
+list_edible(X, [Y]):- edible(Y), where_food(Y, X).
